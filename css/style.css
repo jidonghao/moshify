@@ -4,6 +4,8 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-border: #ccc;
+  --border-radius: 30px;
 }
 html {
   font-size: 62.5%;
@@ -137,11 +139,23 @@ a {
   outline: 0;
   font-size: 2rem;
   color: var(--color-headings);
-  border: 1px solid #ccc;
-  border-radius: 30px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
 }
 .input::placeholder {
   color: #cdcbd7;
+}
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+}
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+}
+.input-group .btn {
+  margin: 4px;
 }
 @media screen and (min-width: 1024px) {
   .input {
