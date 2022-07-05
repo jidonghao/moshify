@@ -214,6 +214,7 @@ a {
   display: flex;
 }
 .input-group .input {
+  padding: 1.5rem 1rem;
   border: 0;
   flex-grow: 1;
 }
