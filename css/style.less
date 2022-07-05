@@ -161,3 +161,22 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+// input
+.input{
+    padding: 1.5rem 3.5rem;
+    outline: 0;
+    font-size: 2rem;
+    color: var(--color-headings);
+    border:1px solid #ccc;
+    border-radius: 30px;
+    &::placeholder{
+        color: #cdcbd7;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .input{
+        font-size: 1.5rem;
+    }
+}
