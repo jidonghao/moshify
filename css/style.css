@@ -6,10 +6,10 @@
   --color-body: #918ca4;
 }
 html {
-  font-style: 62.5%;
+  font-size: 62.5%;
 }
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 2.4rem;
   line-height: 1.5;
   color: var(--color-body);
@@ -44,5 +44,26 @@ p {
   }
   h3 {
     font-size: 2.4rem;
+  }
+}
+a {
+  text-decoration: none;
+}
+.link-arrow {
+  color: var(--color-accent);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.link-arrow::after {
+  content: '>';
+  margin-left: 5px;
+  transition: margin 0.5s;
+}
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
   }
 }

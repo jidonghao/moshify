@@ -1,55 +1,83 @@
-:root{
-    --color-primary:#2584ff; //主要颜色
-    --color-secondary:#00d9ff; //次要颜色
-    --color-accent:#ff3400; //重点颜色
+:root {
+  --color-primary: #2584ff; //主要颜色
+  --color-secondary: #00d9ff; //次要颜色
+  --color-accent: #ff3400; //重点颜色
 
-    --color-headings:#1b0760; //标题
-    --color-body:#918ca4; 
+  --color-headings: #1b0760; //标题
+  --color-body: #918ca4;
 }
-html{
-    font-style: 62.5%;
-}
-
-body{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 2.4rem;
-    line-height: 1.5;
-    color: var(--color-body);
+// 字体
+html {
+  font-size: 62.5%;
 }
 
-h1,h2,h3{
-    color:var(--color-headings);
-    margin-bottom: 1rem;
-
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  color: var(--color-body);
 }
 
-h1{
-    font-size: 7rem;
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  margin-bottom: 1rem;
 }
 
-h2{
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
     font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
 }
 
-h3{
-    font-size: 3rem;
+// 链接
+a {
+  text-decoration: none;
+}
+.link-arrow {
+  color: var(--color-accent);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.link-arrow::after{
+    content:'>';
+    margin-left: 5px;
+    transition: margin 0.5s;
+}
+.link-arrow:hover::after{
+    margin-left: 10px;
+
 }
 
-p{
-    margin-top: 0;
-}
-
-@media screen and (min-width:1024px){
-    body{
-        font-size: 1.8rem;
-    }
-    h1{
-        font-size: 8rem;
-    }
-    h2{
-        font-size: 4rem;
-    }
-    h3{
-        font-size: 2.4rem;
+@media screen and (min-width: 1024px) {
+    .link-arrow{
+        font-size: 1.5rem;
     }
 }
