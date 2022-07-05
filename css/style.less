@@ -66,18 +66,49 @@ a {
   font-size: 2rem;
   font-weight: bold;
 }
-.link-arrow::after{
-    content:'>';
-    margin-left: 5px;
-    transition: margin 0.5s;
+.link-arrow::after {
+  content: ">";
+  margin-left: 5px;
+  transition: margin 0.5s;
 }
-.link-arrow:hover::after{
-    margin-left: 10px;
-
+.link-arrow:hover::after {
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 1024px) {
-    .link-arrow{
-        font-size: 1.5rem;
-    }
+  .link-arrow {
+    font-size: 1.5rem;
+  }
 }
+
+// 标签
+.badge {
+  white-space: nowrap;
+  padding: 0.5rem 2rem;
+  font-weight: 400;
+  font-size: 2rem;
+  border-radius: 20px;
+}
+// 主要标签
+.badge--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+// 次要标签
+.badge--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+// 小的
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .badge {
+        font-size: 1.5rem;
+      }
+      .badge--small{
+        font-size: 1.2rem;
+      }
+  }

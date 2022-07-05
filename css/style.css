@@ -55,7 +55,7 @@ a {
   font-weight: bold;
 }
 .link-arrow::after {
-  content: '>';
+  content: ">";
   margin-left: 5px;
   transition: margin 0.5s;
 }
@@ -65,5 +65,31 @@ a {
 @media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
+  }
+}
+.badge {
+  white-space: nowrap;
+  padding: 0.5rem 2rem;
+  font-weight: 400;
+  font-size: 2rem;
+  border-radius: 20px;
+}
+.badge--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+.badge--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+.badge--small {
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+  .badge--small {
+    font-size: 1.2rem;
   }
 }
