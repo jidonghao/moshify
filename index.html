@@ -11,31 +11,18 @@
 </head>
 
 <body>
-    <section class="block container">
-
-        <div class="block__header">
-            <h2 class="block__heading">Heading</h2>
-        </div>
-
-        <div style="width: 50%;">
-            <div class="card card--sencondary">
-                <header class="card__header">卡片标题</header>
-                <div class="card__body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quia culpa iure ab autem rerum
-                    maxime recusandae ullam error tempore.
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <section class="block block--dark block--skewed-left ">
-        <div class="container">
-            <h2 class="block__heading">Heading</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias, ut veritatis reprehenderit
-                blanditiis rerum. Tempora necessitatibus explicabo iste sequi.</p>
-        </div>
-    </section>
-
+    <nav class="nav collapsiable">
+        <a href="/"><img src="images/logo.svg" alt=""></a>
+        <svg class="icon icon--white nav__toggler">
+            <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsiable__content ">
+            <li class="nav__item"><a href="#">主页</a></li>
+            <li class="nav__item"><a href="#">服务器</a></li>
+            <li class="nav__item"><a href="#">领域</a></li>
+            <li class="nav__item"><a href="#">价格</a></li>
+        </ul>
+    </nav>
     <script src="js/main.js"></script>
 </body>
 
