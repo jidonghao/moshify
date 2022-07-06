@@ -304,6 +304,9 @@ a {
     background: var(--color-primary);
     color: #fff;
   }
+  .badge--primary {
+    background: #126de4;
+  }
 }
 
 .card--sencondary {
@@ -317,7 +320,9 @@ a {
 }
 
 // plan
-
+.plan {
+  transition: transform 0.2s ease-out;
+}
 .plan__name {
   color: #fff;
   margin: 0;
@@ -363,6 +368,10 @@ a {
   }
 }
 
+.plan:hover {
+  transform: scale(1.05);
+}
+
 @media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.4rem;
@@ -376,8 +385,12 @@ a {
   .plan__description {
     font-size: 1.7rem;
   }
-
   .plan--popular {
+    transform: scale(1.1);
+    &:hover {
+      transform: scale(1.15);
+    }
+
     .card__header::before {
       width: 35px;
       top: -4px;
@@ -709,6 +722,17 @@ a {
 
 @media screen and (min-width: 768px) {
   .block-domain__prices {
-    grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
+
+// block-card
+.block-plans {
+  .grid {
+    gap: 4rem;
+  }
+  .card {
+    max-width: 500px;
+    margin: 0 auto;
   }
 }

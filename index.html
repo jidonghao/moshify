@@ -11,30 +11,78 @@
 </head>
 
 <body>
-    <section class="block container block-domain">
-        <header class="block__header">
-            <h2>低至9元/月起</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam porro qui. Aliquam
-                quisquam, labore ipsum hic maxime inventore nisi.</p>
+    <section class="block container block-plans">
+        <div class="grid grid--1x3">
 
-        </header>
-        <div class="input-group">
-            <input type="text" class="input" placeholder="在此输入域名...">
-            <button class="btn btn--accent">
-                <svg class="icon icon--white">
-                    <use xlink:href="images/sprite.svg#search"></use>
-                </svg>
-                搜索</button>
+            <div class="plan">
+                <div class="card card--sencondary">
+                    <header class="card__header">
+                        <h3 class="plan__name">入门</h3>
+                        <span class="plan__price">15元</span>
+                        <span class="plan__billing-cycle">/月</span>
+                        <span class="badge badge--secondary badge--small">一折</span>
+                        <span class="plan__description">轻松开启云计算</span>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">任意多的网站</li>
+                            <li class="list__item">无限制的带宽</li>
+                            <li class="list__item">60GB SSD</li>
+                            <li class="list__item">2 GB RAM</li>
+                            <li class="list__item">1 CPU</li>
+
+                        </ul> 
+                        <button class="btn btn--outline btn--block">立即订阅</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plan plan--popular">
+                <div class="card card--primary">
+                    <header class="card__header">
+                        <h3 class="plan__name">进阶</h3>
+                        <span class="plan__price">26元</span>
+                        <span class="plan__billing-cycle">/月</span>
+                        <span class="badge badge--primary badge--small">两折</span>
+                        <span class="plan__description">轻松开启云计算</span>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">任意多的网站</li>
+                            <li class="list__item">无限制的带宽</li>
+                            <li class="list__item">100GB SSD</li>
+                            <li class="list__item">4 GB RAM</li>
+                            <li class="list__item">2 CPU</li>
+
+                        </ul> 
+                        <button class="btn btn--primary btn--block">立即订阅</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plan">
+                <div class="card card--sencondary">
+                    <header class="card__header">
+                        <h3 class="plan__name">专业</h3>
+                        <span class="plan__price">54元</span>
+                        <span class="plan__billing-cycle">/月</span>
+                        <span class="badge badge--secondary badge--small">一折</span>
+                        <span class="plan__description">轻松开启云计算</span>
+                    </header>
+                    <div class="card__body">
+                        <ul class="list list--tick">
+                            <li class="list__item">任意多的网站</li>
+                            <li class="list__item">无限制的带宽</li>
+                            <li class="list__item">200GB SSD</li>
+                            <li class="list__item">8 GB RAM</li>
+                            <li class="list__item">4 CPU</li>
+
+                        </ul> 
+                        <button class="btn btn--outline btn--block">立即订阅</button>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <ul class="list block-domain__prices">
-            <li><div class="badge badge--secondary">.com ￥54</div></li>
-            <li>.sg ￥60</li>
-            <li>.info ￥46</li>
-            <li>.net ￥32</li>
-            <li>.xyz ￥76</li>
-            <li>更多...</li>
-        </ul>
     </section>
     <script src="js/main.js"></script>
 </body>
