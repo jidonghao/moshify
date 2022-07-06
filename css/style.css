@@ -245,7 +245,7 @@ a {
 .card__header,
 .card__body {
   padding: 2rem 3rem;
-  border-radius: 7px;
+  border-radius: 7px 7px 0 0;
 }
 .card--primary .card__header {
   background: var(--color-primary);
