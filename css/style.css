@@ -432,3 +432,11 @@ a {
     margin: 0 2rem;
   }
 }
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+.collapsible__header .collapsiable__heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
