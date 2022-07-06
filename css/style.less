@@ -156,6 +156,13 @@ a {
 .icon--primary {
   fill: var(--color-primary);
 }
+.icon--white {
+  fill: #fff;
+}
+.icon--small{
+    width: 30px;
+    height: 30px;
+}
 .icon-container {
   background: #f3f9fa;
   width: 64px;
@@ -165,6 +172,10 @@ a {
   justify-content: center;
   align-items: center;
 }
+.icon-container--accent {
+  background: var(--color-accent);
+}
+
 /* Buttons */
 
 .btn {
@@ -401,57 +412,84 @@ a {
   line-height: 1.3;
 }
 
-.quote__text{
-    &::before{
-        content: open-quote;
-    }
-    &::after{
-        content: close-quote;
-    }
+.quote__text {
+  &::before {
+    content: open-quote;
+  }
+  &::after {
+    content: close-quote;
+  }
 }
 
-.quote__author{
-    font-size: 2.8rem;
-    font-weight: 400;
-    font-style:normal;
-    margin-bottom: 0;
+.quote__author {
+  font-size: 2.8rem;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 0;
 }
-.quote__organization{
-    font-size: 1.8rem;
-    color: var(--color-headings);
-    opacity: 0.4;
-    font-style: normal;
+.quote__organization {
+  font-size: 1.8rem;
+  color: var(--color-headings);
+  opacity: 0.4;
+  font-style: normal;
 }
-.quote__line{
-    position: relative;
-    bottom: 10px
+.quote__line {
+  position: relative;
+  bottom: 10px;
 }
 
-@media screen and (min-width:1024px){
-    .quote{
-        font-size: 2rem;
-    }
-    .quote__author{
-        font-size: 2rem;
-    }
-    .quote__organization{
-        font-size: 1.4rem;
-    }
+@media screen and (min-width: 1024px) {
+  .quote {
+    font-size: 2rem;
+  }
+  .quote__author {
+    font-size: 2rem;
+  }
+  .quote__organization {
+    font-size: 1.4rem;
+  }
 }
 
 // grids
 
-.grid{
-    display: grid;
+.grid {
+  display: grid;
 }
 
-@media screen and (min-width:768px) {
-    .grid--1x2{
-        grid-template-columns: 1fr 1fr;
-    }
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: 1fr 1fr;
+  }
 }
-@media screen and (min-width:1024px) {
-    .grid--1x3{
-        grid-template-columns: 1fr 1fr 1fr;
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// 推荐组件
+.testimonial {
+  padding: 3rem;
+  .testimonial__image {
+    position: relative;
+    & > img {
+      width: 100%;
+    }
+    & > .icon-container {
+      position: absolute;
+      top: 3rem;
+      right: -32px;
+    }
+  }
+}
+
+@media screen and (min-width:768px){
+    .testimonial{
+        .quote,.quote__author{
+            font-size: 2.4rem;
+        }
+        .quote{
+            margin-left: 6rem;
+        }
     }
 }
