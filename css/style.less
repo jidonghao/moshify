@@ -159,9 +159,9 @@ a {
 .icon--white {
   fill: #fff;
 }
-.icon--small{
-    width: 30px;
-    height: 30px;
+.icon--small {
+  width: 30px;
+  height: 30px;
 }
 .icon-container {
   background: #f3f9fa;
@@ -483,13 +483,53 @@ a {
   }
 }
 
-@media screen and (min-width:768px){
-    .testimonial{
-        .quote,.quote__author{
-            font-size: 2.4rem;
-        }
-        .quote{
-            margin-left: 6rem;
-        }
+@media screen and (min-width: 768px) {
+  .testimonial {
+    .quote,
+    .quote__author {
+      font-size: 2.4rem;
     }
+    .quote {
+      margin-left: 6rem;
+    }
+  }
+}
+
+// 气泡
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+  .btn {
+    justify-self: center;
+    align-self: center;
+  }
+  .callout__content {
+    text-align: center;
+  }
+}
+
+.callout--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.callout__heading {
+  color: #fff;
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .callout {
+    .grid--1x2{
+        grid-template-columns: 1fr auto;
+    }
+    .callout__content {
+      text-align: left;
+    }
+    .btn{
+        justify-self: start;
+        margin: 0 2rem;
+    }
+  }
 }
