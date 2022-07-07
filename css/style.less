@@ -14,7 +14,7 @@ html {
   font-size: 62.5%;
 }
 // 排版
-::selection{
+::selection {
   background: var(--color-primary);
   color: #fff;
 }
@@ -277,7 +277,7 @@ a {
   display: flex;
   .input {
     padding: 1.5rem 2rem;
-
+    width: 0;
     border: 0;
     flex-grow: 1;
   }
@@ -560,7 +560,7 @@ a {
   .icon {
     cursor: pointer;
   }
-  
+
   .collapsiable__chevron {
     transition: all 0.3s;
 
@@ -719,8 +719,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: bold;
@@ -783,10 +784,10 @@ a {
 }
 
 // block-showcase
-.block-showcase__image>img {
+.block-showcase__image > img {
   width: 100%;
 }
-.block-showcase{
+.block-showcase {
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
 }
 @media screen and (min-width: 768px) {
@@ -804,64 +805,64 @@ a {
 }
 
 // footer
-.footer{
+.footer {
   background: #232323;
 
-  a{
+  a {
     color: #777;
     transition: color 0.3s;
-    &:hover{
+    &:hover {
       color: #fff;
     }
   }
 }
-.footer__section{
+.footer__section {
   padding: 2rem;
   border-bottom: 1px solid #393939;
 
-  .list{
+  .list {
     margin: 0;
   }
 }
-.footer__heading{
+.footer__heading {
   font-weight: 400;
 }
-.footer__brand{
+.footer__brand {
   margin-top: 5rem;
   text-align: center;
-  img{
+  img {
     width: 100%;
     max-width: 230px;
   }
 }
-.footer__copyright{
+.footer__copyright {
   font-size: 2.1rem;
   color: #fff;
-  opacity: .3;
+  opacity: 0.3;
 }
 
-@media screen and (min-width:768px){
-  .footer__sections{
-    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+@media screen and (min-width: 768px) {
+  .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
-  .footer .collapsiable__chevron{
+  .footer .collapsiable__chevron {
     display: none;
   }
-  .footer .collapsiable__content{
+  .footer .collapsiable__content {
     opacity: 1;
     max-height: 100%;
   }
-  .footer__brand{
+  .footer__brand {
     order: -1;
     margin-top: 1rem;
   }
-  .footer__copyright{
+  .footer__copyright {
     font-size: 1.5rem;
   }
-  .footer__section{
+  .footer__section {
     border: 0;
   }
-  .footer__heading{
+  .footer__heading {
     font-size: 1.8rem;
   }
 }

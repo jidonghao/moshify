@@ -11,7 +11,63 @@
 </head>
 
 <body>
+    <header>
+        <nav class="nav collapsiable">
+            <a href="/"><img src="images/logo.svg" alt=""></a>
+            <svg class="icon icon--white nav__toggler">
+                <use xlink:href="images/sprite.svg#menu"></use>
+            </svg>
+            <ul class="list nav__list collapsiable__content ">
+                <li class="nav__item"><a href="#">主页</a></li>
+                <li class="nav__item"><a href="#">服务器</a></li>
+                <li class="nav__item"><a href="#">领域</a></li>
+                <li class="nav__item"><a href="#">价格</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="block block--dark block--skewed-left hero">
+        <div class="container grid grid--1x2">
+            <header class="block__header hero__content">
+                <h1 class="block__heading">专业用户的<br>云节点</h1>
+                <p class="hero__tagline">一分钟就可以发布你的网站</p>
+                <a href="#" class="btn btn--stretched btn--accent">了解更多</a>
+            </header>
     
+            <picture>
+                <source type="image/webp" srcset="images/banner.webp 1x,images/banner@2x.webp 2x">
+                <source type="image/png" srcset="images/banner.png 1x,images/banner@2x.png 2x">
+                <img class="hero__image" src="images/banner.png" alt="">
+    
+            </picture>
+    
+        </div>
+    </section>
+    <section class="block container block-domain">
+        <header class="block__header">
+            <h2>低至9元/月起</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam porro qui. Aliquam
+                quisquam, labore ipsum hic maxime inventore nisi.</p>
+    
+        </header>
+        <div class="input-group">
+            <input type="text" class="input" placeholder="在此输入域名...">
+            <button class="btn btn--accent">
+                <svg class="icon icon--white">
+                    <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+                搜索</button>
+        </div>
+    
+        <ul class="list block-domain__prices">
+            <li><div class="badge badge--secondary">.com ￥54</div></li>
+            <li>.sg ￥60</li>
+            <li>.info ￥46</li>
+            <li>.net ￥32</li>
+            <li>.xyz ￥76</li>
+            <li>更多...</li>
+        </ul>
+    </section>
     <script src="js/main.js"></script>
 </body>
 
