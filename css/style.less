@@ -360,6 +360,7 @@ a {
 }
 
 .plan--popular {
+  order: -1;
   .card__header {
     position: relative;
   }
@@ -391,6 +392,7 @@ a {
     font-size: 1.7rem;
   }
   .plan--popular {
+    order:0;
     transform: scale(1.1);
     &:hover {
       transform: scale(1.15);
@@ -724,16 +726,17 @@ a {
 }
 
 .block-domain__prices {
+  align-items: center;
   color: var(--color-headings);
+  cursor: pointer;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: bold;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 6rem);
   justify-items: center;
-  align-items: center;
-  max-width: 700px;
   margin: 0 auto;
+  max-width: 700px;
 }
 
 @media screen and (min-width: 768px) {
@@ -852,7 +855,7 @@ a {
 @media screen and (min-width: 768px) {
   .footer__sections {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    justify-items: end;
+    justify-items: center;
   }
   .footer .collapsiable__chevron {
     display: none;
