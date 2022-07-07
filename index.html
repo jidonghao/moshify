@@ -8,6 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -29,12 +31,12 @@
     <section class="block block--dark block--skewed-left hero">
         <div class="container grid grid--1x2">
             <header class="block__header hero__content">
-                <h1 class="block__heading">专业用户的<br>云节点</h1>
+                <h1 data-aos="zoom-in-up" class="block__heading">专业用户的<br>云节点</h1>
                 <p class="hero__tagline">一分钟就可以发布你的网站</p>
                 <a href="#" class="btn btn--stretched btn--accent">了解更多</a>
             </header>
 
-            <picture>
+            <picture data-aos="zoom-in">
                 <source type="image/webp" srcset="images/banner.webp 1x,images/banner@2x.webp 2x">
                 <source type="image/png" srcset="images/banner.png 1x,images/banner@2x.png 2x">
                 <img class="hero__image" src="images/banner.png" alt="">
@@ -43,7 +45,7 @@
 
         </div>
     </section>
-    <section class="block container block-domain">
+    <section  data-aos="zoom-in-up"  class="block container block-domain">
         <header class="block__header">
             <h2>低至9元/月起</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam porro qui. Aliquam
@@ -71,7 +73,7 @@
         </ul>
     </section>
 
-    <section class="block container block-plans">
+    <section  data-aos="fade-up"  class="block container block-plans">
         <div class="grid grid--1x3">
 
             <div class="plan">
@@ -151,7 +153,7 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, sit!</p>
         </header>
         <article class="grid grid--1x2 feature">
-            <div class="feature__content">
+            <div class="feature__content"  data-aos="zoom-in-up">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
                         <use xlink:href="images/sprite.svg#easy"></use>
@@ -162,7 +164,7 @@
                     beatae dolorum excepturi voluptatibus repellat dolor.</p>
                 <a href="#" class="link-arrow">了解更多</a>
             </div>
-            <picture>
+            <picture data-aos="zoom-in-up">
                 <source type="image/webp" srcset="images/easy.webp 1x,images/easy@2x.webp 2x">
                 <source type="image/jpg" srcset="images/easy.jpg 1x,images/easy@2x.jpg 2x">
                 <img class="feature__image" src="images/easy@2x.jpg" alt="">
@@ -170,7 +172,7 @@
         </article>
 
         <article class="grid grid--1x2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="fade-up">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
                         <use xlink:href="images/sprite.svg#computer"></use>
@@ -181,7 +183,7 @@
                     beatae dolorum excepturi voluptatibus repellat dolor.</p>
                 <a href="#" class="link-arrow">了解更多</a>
             </div>
-            <picture>
+            <picture  data-aos="zoom-in-up">
                 <source type="image/webp" srcset="images/fast.webp 1x,images/fast@2x.webp 2x">
                 <source type="image/jpg" srcset="images/fast.jpg 1x,images/fast@2x.jpg 2x">
                 <img class="feature__image" src="images/fast@2x.jpg" alt="">
@@ -189,7 +191,7 @@
         </article>
 
         <article class="grid grid--1x2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="fade-up">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
                         <use xlink:href="images/sprite.svg#settings"></use>
@@ -200,7 +202,7 @@
                     beatae dolorum excepturi voluptatibus repellat dolor.</p>
                 <a href="#" class="link-arrow">了解更多</a>
             </div>
-            <picture>
+            <picture data-aos="zoom-in-up">
                 <source type="image/webp" srcset="images/wordpress.webp 1x,images/wordpress@2x.webp 2x">
                 <source type="image/jpg" srcset="images/wordpress.jpg 1x,images/wordpress@2x.jpg 2x">
                 <img class="feature__image" src="images/wordpress@2x.jpg" alt="">
@@ -208,7 +210,7 @@
         </article>
 
         <article class="grid grid--1x2 feature">
-            <div class="feature__content">
+            <div class="feature__content"  data-aos="fade-up">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
                         <use xlink:href="images/sprite.svg#clock"></use>
@@ -219,7 +221,7 @@
                     beatae dolorum excepturi voluptatibus repellat dolor.</p>
                 <a href="#" class="link-arrow">了解更多</a>
             </div>
-            <picture>
+            <picture data-aos="zoom-in-up">
                 <source type="image/webp" srcset="images/support.webp 1x,images/support@2x.webp 2x">
                 <source type="image/jpg" srcset="images/support.jpg 1x,images/support@2x.jpg 2x">
                 <img class="feature__image" src="images/support@2x.jpg" alt="">
@@ -232,13 +234,13 @@
             <h2 class="block__heading">友好的交互面板</h2>
         </header>
         <div class="container grid grid--1x2">
-            <picture class="block-showcase__image">
+            <picture  data-aos="fade-right"  class="block-showcase__image">
                 <source type="image/webp" srcset="images/ipad.webp 1x,images/ipad@2x.webp 2x">
                 <source type="image/png" srcset="images/ipad.png 1x,images/ipad@2x.png 2x">
                 <img src="images/ipad@2x.png" alt="">
             </picture>
 
-            <ul class="list">
+            <ul class="list"  data-aos="fade-up">
                 <li>
                     <div class="media">
                         <div class="media__image">
@@ -418,6 +420,10 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
