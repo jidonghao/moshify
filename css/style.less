@@ -736,3 +736,38 @@ a {
     margin: 0 auto;
   }
 }
+
+// .block .container{
+//   align-items: center;
+//   .media{
+//     flex-direction: column;
+//     .media__body{
+//       margin: 2rem 0;
+//       p{
+//         margin-bottom: 3rem;
+//       }
+//     }
+//   }
+// }
+
+// feature
+.feature {
+  gap: 4rem 2rem;
+  align-items: center;
+  margin: 12rem 0;
+  &:first-of-type{
+    margin-top: 6rem;
+  }
+}
+.feature__heading {
+  margin: 1rem 0;
+}
+.feature__image {
+  width: 100%;
+}
+
+@media screen and (min-width:768px){
+  .feature:nth-of-type(even) .feature__content{
+    order: 2;
+  }
+}
