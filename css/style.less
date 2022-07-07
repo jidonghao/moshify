@@ -13,7 +13,11 @@
 html {
   font-size: 62.5%;
 }
-
+// 排版
+::selection{
+  background: var(--color-primary);
+  color: #fff;
+}
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -40,6 +44,7 @@ h2 {
 
 h3 {
   font-size: 3rem;
+  font-weight: 400;
 }
 
 p {
@@ -122,7 +127,6 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
-  color: var(--color-headings);
   font-size: bold;
 }
 // 行
@@ -136,6 +140,7 @@ a {
 .list--tick {
   list-style-image: url(../images/tick.svg);
   padding-left: 3rem;
+  color: var(--color-headings);
 
   .list--item {
     padding-left: 0.5rem;
@@ -403,6 +408,7 @@ a {
 
 .media {
   display: flex;
+  margin-bottom: 4rem;
   .media__title {
     margin-top: 0;
   }
@@ -596,7 +602,9 @@ a {
 .block--dark {
   background: #000;
   color: #7b858b;
-  .block__heading {
+  h1,
+  h2,
+  h3 {
     color: #fff;
   }
 }
@@ -755,7 +763,7 @@ a {
   gap: 4rem 2rem;
   align-items: center;
   margin: 12rem 0;
-  &:first-of-type{
+  &:first-of-type {
     margin-top: 6rem;
   }
 }
@@ -766,8 +774,29 @@ a {
   width: 100%;
 }
 
-@media screen and (min-width:768px){
-  .feature:nth-of-type(even) .feature__content{
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
     order: 2;
+  }
+}
+
+// block-showcase
+.block-showcase__image>img {
+  width: 100%;
+}
+.block-showcase{
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+}
+@media screen and (min-width: 768px) {
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .block-showcase__image {
+    justify-self: end;
+    & > img {
+      width: auto;
+      max-width: 700px;
+    }
   }
 }
