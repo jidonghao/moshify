@@ -518,6 +518,9 @@ a {
 .callout {
   padding: 4rem;
   border-radius: 5px;
+  margin: 0 3.5rem;
+  transform: translateY(60%);
+  max-width: 980px;
   .btn {
     justify-self: center;
     align-self: center;
@@ -526,7 +529,6 @@ a {
     text-align: center;
   }
 }
-
 .callout--primary {
   background: var(--color-primary);
   color: #fff;
@@ -540,6 +542,9 @@ a {
 
 @media screen and (min-width: 768px) {
   .callout {
+    margin: 0 auto;
+    transform: translateY(70%);
+
     .grid--1x2 {
       grid-template-columns: 1fr auto;
     }
@@ -807,7 +812,7 @@ a {
 // footer
 .footer {
   background: #232323;
-
+  padding-top: 30rem;
   a {
     color: #777;
     transition: color 0.3s;
@@ -843,7 +848,8 @@ a {
 
 @media screen and (min-width: 768px) {
   .footer__sections {
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    justify-items: end;
   }
   .footer .collapsiable__chevron {
     display: none;
@@ -855,6 +861,7 @@ a {
   .footer__brand {
     order: -1;
     margin-top: 1rem;
+    justify-self: start;
   }
   .footer__copyright {
     font-size: 1.5rem;
@@ -864,5 +871,8 @@ a {
   }
   .footer__heading {
     font-size: 1.8rem;
+  }
+  .footer {
+    padding-top: 20rem;
   }
 }
