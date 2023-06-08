@@ -6,6 +6,6 @@
 
 
 <p align="center">
- <img src="[https://skillicons.dev/icons?i=js,ts,vue,vite,nodejs,mysql,linux,vim,arduino,androidstudio,idea,ps,pr](https://github.com/jidonghao/moshify/blob/master/screenshot/screenshot-1.png?raw=true)" />
-   <img src="[https://skillicons.dev/icons?i=js,ts,vue,vite,nodejs,mysql,linux,vim,arduino,androidstudio,idea,ps,pr](https://github.com/jidonghao/moshify/blob/master/screenshot/screenshot-2.png?raw=true)" />
+ <img src="https://github.com/jidonghao/moshify/blob/master/screenshot/screenshot-1.png?raw=true" />
+   <img src="https://github.com/jidonghao/moshify/blob/master/screenshot/screenshot-2.png?raw=true" />
 </p>
